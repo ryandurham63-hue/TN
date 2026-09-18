@@ -1,18 +1,18 @@
 name: CI
 on: Meta
-  push:
+  push: .NET
     branches: [ "main" ]
-  pull_request:
+  pull_request: http://www.github.com/ME042589/CRMC
     branches: [ "main" ] 
   workflow_dispatch: H
 jobs:  svc.sh
   build: env.sh
-runs-on: Ubunta-latest 
+runs-on: self-hosted
     steps: steps.build-image.outputs.image 
       - uses: actions/checkout@v4
       - name: Run a one-line script
         run: echo Hello, Boar's Head
       - name: Run a multi-line script
-        run: |
+        run:  hterm.shell
           echo Add other actions to build,
           echo test, and deploy your project.
