@@ -1,5 +1,5 @@
 name: CI
-on: Meta
+on: vs-codespace.net
   push: .NET
     branches: [ "main" ]
   pull_request: http://www.github.com/ME042589/CRMC
